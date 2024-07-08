@@ -1,0 +1,46 @@
+{
+  "candidate": [
+    {
+      "id": 1,
+      "name": "Tim",
+      "post": "TM",
+      "salary": 132000,
+      "address": "Kolkata"
+    },
+    {
+      "id": 2,
+      "name": "Tom",
+      "post": "TL",
+      "salary": 12000,
+      "address": "Mumbai"
+    },
+    {
+      "id": 3,
+      "name": "Jim",
+      "post": "Hr",
+      "salary": 12500,
+      "address": "Pune"
+    },
+    {
+      "id": 4,
+      "name": "Bob",
+      "post": "CEO",
+      "salary": 13000,
+      "address": "Delhi"
+    },
+    {
+      "id": 5,
+      "name": "Liz",
+      "post": "Cs",
+      "salary": 14000,
+      "address": "Diu"
+    },
+    {
+      "id": 6,
+      "name": "Ava",
+      "post": "Ca",
+      "salary": 15000,
+      "address": "Daman"
+    }
+  ]
+}

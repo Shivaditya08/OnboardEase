@@ -1,0 +1,53 @@
+<h1>Candidate Details</h1>
+
+<button type="button" routerLink="add" class="btn btn-outline-success">
+  Add
+</button>
+
+<!-- <table borderclass="table table-striped table-hover"> -->
+<table class="table table-striped table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>Sr No.</th>
+      <th>Name</th>
+      <th>Post</th>
+      <th>Salary</th>
+      <th>Address</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let can of canData">
+      <td>{{ can.id }}</td>
+      <td>{{ can.name }}</td>
+      <td>{{ can.post }}</td>
+      <td>{{ can.salary }}</td>
+      <td>{{ can.address }}</td>
+      <td>
+        <!-- <button
+          type="button"
+          class="btn btn-outline-primary btn-sm"
+          [routerLink]="['/edit', can.id]"
+        >
+          <i class="fa fa-eye" aria-hidden="true"></i></button
+        >&nbsp; -->
+
+        <button
+          type="button"
+          class="btn btn-outline-success btn-sm"
+          [routerLink]="['edit', can.id]"
+        >
+          Edit</button
+        >&nbsp;
+
+        <button
+          type="button"
+          class="btn btn-outline-danger btn-sm"
+          (click)="deleteData(can.id)"
+        >
+          Del
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

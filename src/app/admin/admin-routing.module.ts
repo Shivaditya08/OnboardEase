@@ -1,0 +1,27 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
+import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
+import { CandidateDashboardComponent } from './candidate/candidate-dashboard/candidate-dashboard.component';
+import { CandidateAddComponent } from './candidate/candidate-add/candidate-add.component';
+import { CandidateEditComponent } from './candidate/candidate-edit/candidate-edit.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: MainDashboardComponent,
+    children: [
+      { path: 'candidate', component: CandidateDashboardComponent },
+      { path: 'candidate/add', component: CandidateAddComponent },
+      { path: 'edit', component: CandidateEditComponent },
+    ],
+  },
+  { path: 'edit', component: CandidateEditComponent },
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
+})
+export class AdminRoutingModule {}
