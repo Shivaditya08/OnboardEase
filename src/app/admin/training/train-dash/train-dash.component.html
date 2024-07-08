@@ -1,0 +1,56 @@
+<!-- <p>train-dash works!</p> -->
+<h1>Training Details</h1>
+
+<button type="button" routerLink="add" class="btn btn-outline-success">
+  Add
+</button>
+
+<!-- <table borderclass="table table-striped table-hover"> -->
+<table class="table table-striped table-hover">
+  <thead class="table-primary">
+    <tr>
+      <th>Sr No.</th>
+      <th>Course Name</th>
+      <th>Category</th>
+      <th>Instructor</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of trainData">
+      <td>{{ t.id }}</td>
+      <td>{{ t.cName }}</td>
+      <td>{{ t.cCate }}</td>
+      <td>{{ t.cIns }}</td>
+      <td>{{ t.cDes }}</td>
+      <td>{{ t.cStat }}</td>
+      <td>
+        <!-- <button
+          type="button"
+          class="btn btn-outline-primary btn-sm"
+          [routerLink]="['/edit', can.id]"
+        >
+          <i class="fa fa-eye" aria-hidden="true"></i></button
+        >&nbsp; -->
+
+        <button
+          type="button"
+          class="btn btn-outline-success btn-sm"
+          [routerLink]="['edit', t.id]"
+        >
+          Edit</button
+        >&nbsp;
+
+        <button
+          type="button"
+          class="btn btn-outline-danger btn-sm"
+          (click)="deleteData(t.id)"
+        >
+          Del
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

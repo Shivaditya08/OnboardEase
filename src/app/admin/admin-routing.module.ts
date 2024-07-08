@@ -6,6 +6,8 @@ import { FooterComponent } from './footer/footer.component';
 import { CandidateDashboardComponent } from './candidate/candidate-dashboard/candidate-dashboard.component';
 import { CandidateAddComponent } from './candidate/candidate-add/candidate-add.component';
 import { CandidateEditComponent } from './candidate/candidate-edit/candidate-edit.component';
+import { TrainAddComponent } from './training/train-add/train-add.component';
+import { TrainDashComponent } from './training/train-dash/train-dash.component';
 
 const routes: Routes = [
   {
@@ -15,6 +17,7 @@ const routes: Routes = [
       { path: 'candidate', component: CandidateDashboardComponent },
       { path: 'candidate/add', component: CandidateAddComponent },
       { path: 'edit', component: CandidateEditComponent },
+      { path: 'training', component: TrainDashComponent },
     ],
   },
   { path: 'edit', component: CandidateEditComponent },
