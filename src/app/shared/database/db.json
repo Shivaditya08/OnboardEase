@@ -42,5 +42,55 @@
       "salary": 15000,
       "address": "Daman"
     }
+  ],
+  "training": [
+    {
+      "id": 1,
+      "cName": "AngularJS",
+      "cCate": "Frontend Development",
+      "cIns": "Peter Parker",
+      "cDes": "-------",
+      "cStat": "Ongoing"
+    },
+    {
+      "id": 2,
+      "cName": "NodeJS",
+      "cCate": "Backend Development",
+      "cIns": "Robert Downey Jr",
+      "cDes": "-------",
+      "cStat": "Done"
+    },
+    {
+      "id": 3,
+      "cName": "HTML 5",
+      "cCate": "Web Design",
+      "cIns": "Chris Evans",
+      "cDes": "-------",
+      "cStat": "Ongoing"
+    },
+    {
+      "id": 4,
+      "cName": "ReactJS",
+      "cCate": "Frontend Development",
+      "cIns": "John Carter",
+      "cDes": "-------",
+      "cStat": "Done"
+    },
+    {
+      "id": 5,
+      "cName": "Bootstrap",
+      "cCate": "Frontend Development",
+      "cIns": "Bradd Pitt",
+      "cDes": "-------",
+      "cStat": "Ongoing"
+    },
+    {
+      "id": 6,
+      "cName": "Github",
+      "cCate": "Version Control",
+      "cIns": "Hugh Jackman",
+      "cDes": "-------",
+      "cStat": "Done"
+    }
   ]
 }
