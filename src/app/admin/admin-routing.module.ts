@@ -25,9 +25,6 @@ const routes: Routes = [
     ],
   },
   { path: 'edit', component: CandidateEditComponent },
- 
-  { path: 'Emp-login', component: EmployeeLoginComponent },
-  { path: 'Employee-Reg', component: EmployeeRegistrationComponent}
 ];
 
 @NgModule({
