@@ -8,6 +8,7 @@ import { CandidateAddComponent } from './candidate/candidate-add/candidate-add.c
 import { CandidateEditComponent } from './candidate/candidate-edit/candidate-edit.component';
 import { TrainAddComponent } from './training/train-add/train-add.component';
 import { TrainDashComponent } from './training/train-dash/train-dash.component';
+import { TrainEditComponent } from './training/train-edit/train-edit.component';
 
 const routes: Routes = [
   {
@@ -18,9 +19,13 @@ const routes: Routes = [
       { path: 'candidate/add', component: CandidateAddComponent },
       { path: 'edit', component: CandidateEditComponent },
       { path: 'training', component: TrainDashComponent },
+      { path: 'training/add', component: TrainAddComponent },
+      // { path: 'training/edit', component: TrainEditComponent },
     ],
   },
   { path: 'edit', component: CandidateEditComponent },
+  {path: 'edit', component: TrainEditComponent },
+  
 ];
 
 @NgModule({

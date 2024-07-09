@@ -1,1 +1,61 @@
-<p>train-edit works!</p>
+<!-- <p>train-edit works!</p> -->
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <form #refCan="ngForm" (ngSubmit)="addData(refCan.value)">
+        <div>
+          <label for="" class="form-label">Enter Name</label>
+          <input
+            type="text"
+            name="name"
+            id="canName"
+            class="form-control"
+            [ngModel]="trainData?.name"
+          />
+        </div>
+  
+        <div>
+          <label for="s" class="form-label">Enter Post</label>
+          <input
+            type="text"
+            name="post"
+            id="canPost"
+            class="form-control"
+            [ngModel]="trainData?.post"
+          />
+        </div>
+  
+        <div>
+          <label for="" class="form-label">Enter Salary</label>
+          <input
+            type="text"
+            name="salary"
+            id="canSalary"
+            class="form-control"
+            [ngModel]="trainData?.salary"
+          />
+        </div>
+  
+        <div>
+          <label for="" class="form-label">Enter Address</label>
+          <input
+            type="text"
+            name="address"
+            id="canAddress"
+            class="form-control"
+            [ngModel]="trainData?.address"
+          />
+        </div>
+        <br />
+        <button
+          type="submit"
+          class="btn btn-outline-primary"
+          [disabled]="refCan.invalid"
+        >
+          Submit</button
+        >&nbsp;
+        <button type="reset" class="btn btn-outline-primary">Reset</button>
+      </form>
+    </div>
+  </div>
+  

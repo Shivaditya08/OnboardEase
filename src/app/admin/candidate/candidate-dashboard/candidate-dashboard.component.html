@@ -1,16 +1,17 @@
 <h1>Candidate Details</h1>
 
-<button type="button" routerLink="add" class="btn btn-outline-success">
+<button type="button" routerLink="add"  class="btn btn-outline-success add">
   Add
-</button>
+</button> 
 
 <!-- <table borderclass="table table-striped table-hover"> -->
 <table class="table table-striped table-hover">
   <thead class="table-dark">
     <tr>
-      <th>Sr No.</th>
+      <th>ID</th>
       <th>Name</th>
       <th>Post</th>
+      <th>Counsellor</th>
       <th>Salary</th>
       <th>Address</th>
       <th>Action</th>
@@ -18,9 +19,10 @@
   </thead>
   <tbody>
     <tr *ngFor="let can of canData">
-      <td>{{ can.id }}</td>
+      <td>{{ can.cId }}</td>
       <td>{{ can.name }}</td>
       <td>{{ can.post }}</td>
+      <td>{{ can.counsellor }}</td>
       <td>{{ can.salary }}</td>
       <td>{{ can.address }}</td>
       <td>

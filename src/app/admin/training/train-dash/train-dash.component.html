@@ -1,7 +1,7 @@
 <!-- <p>train-dash works!</p> -->
 <h1>Training Details</h1>
 
-<button type="button" routerLink="add" class="btn btn-outline-success">
+<button type="button" routerLink="add" class="btn btn-outline-success add">
   Add
 </button>
 
@@ -13,7 +13,8 @@
       <th>Course Name</th>
       <th>Category</th>
       <th>Instructor</th>
-      <th>Description</th>
+      <th>Duration</th>
+      <th>Platform</th>
       <th>Status</th>
       <th>Action</th>
     </tr>
@@ -24,7 +25,8 @@
       <td>{{ t.cName }}</td>
       <td>{{ t.cCate }}</td>
       <td>{{ t.cIns }}</td>
-      <td>{{ t.cDes }}</td>
+      <td>{{ t.cDur }}</td>
+      <td>{{ t.cPlat }}</td>
       <td>{{ t.cStat }}</td>
       <td>
         <!-- <button

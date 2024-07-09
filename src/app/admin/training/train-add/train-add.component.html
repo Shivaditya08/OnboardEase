@@ -1,1 +1,50 @@
-<p>train-add works!</p>
+<!-- <p>train-add works!</p> -->
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <form [formGroup]="trainData" (ngSubmit)="addData()">
+        <div>
+          <label for="" class="form-label">Enter User Id</label>
+          <input
+            type="text"
+            name="uid"
+            id="uid"
+            class="form-control"
+            formControlName="uid"
+          />
+        </div>
+  
+        <div>
+          <label for="" class="form-label">Enter Password</label>
+          <input
+            type="text"
+            name="upass"
+            id="upass"
+            class="form-control"
+            formControlName="upass"
+          />
+        </div>
+  
+        <div>
+          <label for="" class="form-label">Enter Role</label>
+          <input
+            type="text"
+            name="role"
+            id="role"
+            class="form-control"
+            formControlName="role"
+          />
+        </div>
+        <br />
+        <button
+          type="submit"
+          class="btn btn-outline-primary"
+          [disabled]="trainData.invalid"
+        >
+          Submit</button
+        >&nbsp;
+        <button type="reset" class="btn btn-outline-primary">Reset</button>
+      </form>
+    </div>
+  </div>
+  
