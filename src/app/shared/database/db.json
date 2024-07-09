@@ -42,5 +42,31 @@
       "salary": 15000,
       "address": "Daman"
     }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "uid": "admin@gmail.com",
+      "upass": "admin@123",
+      "role": "Admin"
+    },
+    {
+      "id": "2",
+      "uid": "shivaay@gmail.com",
+      "upass": "shivaay@123",
+      "role": "Trainer"
+    },
+    {
+      "id": "3",
+      "uid": "tanmay@gmail.com",
+      "upass": "tanmay@123",
+      "role": "Counceler"
+    },
+    {
+      "id": "4",
+      "uid": "vivek@gmail.com",
+      "upass": "vivek@123",
+      "role": "Trainer"
+    }
   ]
 }

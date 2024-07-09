@@ -6,7 +6,8 @@ import { FooterComponent } from './footer/footer.component';
 import { CandidateDashboardComponent } from './candidate/candidate-dashboard/candidate-dashboard.component';
 import { CandidateAddComponent } from './candidate/candidate-add/candidate-add.component';
 import { CandidateEditComponent } from './candidate/candidate-edit/candidate-edit.component';
-
+import { EmployeeLoginComponent } from '../employee-login/employee-login.component';
+import { EmployeeRegistrationComponent } from '../employee-registration/employee-registration.component';
 const routes: Routes = [
   {
     path: '',
@@ -18,6 +19,9 @@ const routes: Routes = [
     ],
   },
   { path: 'edit', component: CandidateEditComponent },
+ 
+  { path: 'Emp-login', component: EmployeeLoginComponent },
+  { path: 'Employee-Reg', component: EmployeeRegistrationComponent}
 ];
 
 @NgModule({
