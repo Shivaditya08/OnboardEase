@@ -8,7 +8,8 @@ import { CandidateAddComponent } from './candidate/candidate-add/candidate-add.c
 import { CandidateEditComponent } from './candidate/candidate-edit/candidate-edit.component';
 import { TrainAddComponent } from './training/train-add/train-add.component';
 import { TrainDashComponent } from './training/train-dash/train-dash.component';
-
+import { EmployeeLoginComponent } from '../employee-login/employee-login.component';
+import { EmployeeRegistrationComponent } from '../employee-registration/employee-registration.component';
 const routes: Routes = [
   {
     path: '',
@@ -21,6 +22,9 @@ const routes: Routes = [
     ],
   },
   { path: 'edit', component: CandidateEditComponent },
+ 
+  { path: 'Emp-login', component: EmployeeLoginComponent },
+  { path: 'Employee-Reg', component: EmployeeRegistrationComponent}
 ];
 
 @NgModule({
