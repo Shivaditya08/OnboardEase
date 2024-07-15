@@ -41,3 +41,44 @@ export class CandidateEditComponent {
     });
   }
 }
+
+// import { Component } from '@angular/core';
+// import { ActivatedRoute, Router } from '@angular/router';
+// import { DatabaseSerService } from '../../shared/services/database-ser.service';
+// import { FormsModule } from '@angular/forms';
+
+
+// @Component({
+//   selector: 'app-emp-edit-comp',
+//   standalone: true,
+//   imports: [FormsModule],
+//   templateUrl: './emp-edit-comp.component.html',
+//   styleUrl: './emp-edit-comp.component.css'
+// })
+// export class EmpEditCompComponent {
+//    id:any;
+//    empData:any;
+
+//   constructor(private _actroute:ActivatedRoute,private _dbServe:DatabaseSerService,private _router:Router){}
+//     ngOnInit(){
+
+//       this._actroute.paramMap.subscribe((para)=>{
+//         // console.log(para);
+//        this.id = para.get("id");
+//         this._dbServe.getSingleDataRequest(this.id).subscribe((res)=>{
+//           // console.log(res);
+//           this.empData= {...res};
+//         })
+        
+//       })
+//     }
+//     addData(data:any){
+//       this._dbServe.updateEmployee(this.id,data).subscribe(()=>{
+//         window.alert("Data Updated Succesfully");
+//         this._router.navigate(["/empdash"]);
+//       })
+//      }
+
+
+// }
+

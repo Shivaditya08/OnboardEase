@@ -1,6 +1,6 @@
 <h1>Candidate Details</h1>
 
-<button type="button" routerLink="add"  class="btn btn-outline-success add">
+<button type="button" routerLink="add"  class="btn btn-outline-primary add">
   Add
 </button> 
 
@@ -19,7 +19,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let can of canData">
-      <td>{{ can.cId }}</td>
+      <td>{{ can.id }}</td>
       <td>{{ can.name }}</td>
       <td>{{ can.post }}</td>
       <td>{{ can.counsellor }}</td>
@@ -34,13 +34,14 @@
           <i class="fa fa-eye" aria-hidden="true"></i></button
         >&nbsp; -->
 
-        <button
+        <button type="button" [routerLink]="['/canedit',can.id]" class="btn btn-outline-success btn-sm">Edit</button>&nbsp;
+        <!-- <button
           type="button"
           class="btn btn-outline-success btn-sm"
           [routerLink]="['edit', can.id]"
         >
           Edit</button
-        >&nbsp;
+        >&nbsp; -->
 
         <button
           type="button"

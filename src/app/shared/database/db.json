@@ -1,15 +1,15 @@
 {
   "candidate": [
     {
-      "cId": "IN2024101",
       "name": "Joe Root",
       "post": "Staff-1",
-      "counsellor": "Virendra Sehwag",
-      "salary": 40000,
-      "address": "Nottingham"
+      "counsellor": "M.S Dhoni",
+      "salary": "40000",
+      "address": "Nottingham",
+      "id": "IN2024101"
     },
     {
-      "cId": "IN2024102",
+      "id": "IN2024102",
       "name": "Corey Anderson",
       "post": "Staff-2",
       "counsellor": "Sachin Tendulker",
@@ -17,7 +17,7 @@
       "address": "Auckland"
     },
     {
-      "cId": "IN2024103",
+      "id": "IN2024103",
       "name": "Jos Buttler",
       "post": "Senior",
       "counsellor": "Brendom McCullum",
@@ -25,7 +25,7 @@
       "address": "Manchester"
     },
     {
-      "cId": "IN2024104",
+      "id": "IN2024104",
       "name": "Rinku Singh",
       "post": "Manager",
       "counsellor": "Chris Gayle",
@@ -33,7 +33,7 @@
       "address": "Patna"
     },
     {
-      "cId": "IN2024105",
+      "id": "IN2024105",
       "name": "Abhishek Sharma",
       "post": "Staff-3",
       "counsellor": "Yuvraj Singh",
@@ -41,7 +41,7 @@
       "address": "Hydrabad"
     },
     {
-      "cId": "IN2024106",
+      "id": "IN2024106",
       "name": "Subhman Gill",
       "post": "Staff-1",
       "counsellor": "Virat Kohli",
@@ -51,13 +51,13 @@
   ],
   "training": [
     {
-      "id": 1,
       "cName": "AngularJS",
       "cCate": "Frontend Development",
       "cIns": "Peter Parker",
       "cDur": "38.5 hr",
       "cPlat": "Udemy",
-      "cStat": "Ongoing"
+      "cStat": "Ongoing",
+      "id": 1
     },
     {
       "id": 2,

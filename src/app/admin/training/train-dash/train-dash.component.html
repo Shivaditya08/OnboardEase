@@ -1,7 +1,7 @@
 <!-- <p>train-dash works!</p> -->
 <h1>Training Details</h1>
 
-<button type="button" routerLink="add" class="btn btn-outline-success add">
+<button type="button" routerLink="add" class="btn btn-outline-primary add">
   Add
 </button>
 
@@ -37,21 +37,21 @@
           <i class="fa fa-eye" aria-hidden="true"></i></button
         >&nbsp; -->
 
-        <button
+        <!-- <button
           type="button"
           class="btn btn-outline-success btn-sm"
           [routerLink]="['edit', t.id]"
         >
           Edit</button
-        >&nbsp;
-
+        >&nbsp; -->
+        <button type="button" [routerLink]="['/trainedit',t.id]" class="btn btn-outline-success btn-sm">Edit</button>&nbsp;
         <button
           type="button"
           class="btn btn-outline-danger btn-sm"
           (click)="deleteData(t.id)"
         >
           Del
-        </button>
+        </button> 
       </td>
     </tr>
   </tbody>

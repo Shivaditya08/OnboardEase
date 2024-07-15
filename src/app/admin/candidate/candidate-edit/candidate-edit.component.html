@@ -1,59 +1,35 @@
+
+<p class="text-center"><strong>Edit Candidate Details</strong></p>
 <div class="row">
-  <div class="col-3"></div>
-  <div class="col-6">
-    <form #refCan="ngForm" (ngSubmit)="addData(refCan.value)">
-      <div>
-        <label for="" class="form-label">Enter Name</label>
-        <input
-          type="text"
-          name="name"
-          id="canName"
-          class="form-control"
-          [ngModel]="canData?.name"
-        />
-      </div>
+    <div class="col-3"></div>
+    <div class="col-6">
+        <form #refEmp="ngForm" (ngSubmit)="addData(refEmp.value)">
+            <div>
+                <label for="empName" class="form-label">Candidate Name</label>
+    <input type="text" name="name" id="empName" class="form-control" [ngModel]="canData?.name">
+            </div>
+            <div>
+                <label for="empPost" class="form-label">Candidate Post</label>
+    <input type="text" name="post" id="empPost" class="form-control" [ngModel]="canData?.post">
+            </div>
+            <div>
+              <label for="empCoun" class="form-label">Counsellor Name</label>
+  <input type="text" name="counsellor" id="empCoun" class="form-control" [ngModel]="canData?.counsellor">
+          </div>
+            <div>
+                <label for="empSalary" class="form-label">Candidate Salary</label>
+    <input type="text" name="salary" id="empSalary" class="form-control" [ngModel]="canData?.salary">
+            </div>
+            <div>
+                <label for="empName" class="form-label">Candidate Address</label>
+    <input type="text" name="address" id="empName" class="form-control" [ngModel]="canData?.address">
+            </div><br>
 
-      <div>
-        <label for="s" class="form-label">Enter Post</label>
-        <input
-          type="text"
-          name="post"
-          id="canPost"
-          class="form-control"
-          [ngModel]="canData?.post"
-        />
-      </div>
+            <button type="submit" class="btn btn-outline-primary btn-sm" [disabled]="refEmp.invalid">Submit</button>&nbsp;
+            <button type="reset" class="btn btn-outline-primary btn-sm">Reset</button>
 
-      <div>
-        <label for="" class="form-label">Enter Salary</label>
-        <input
-          type="text"
-          name="salary"
-          id="canSalary"
-          class="form-control"
-          [ngModel]="canData?.salary"
-        />
-      </div>
+        </form>
 
-      <div>
-        <label for="" class="form-label">Enter Address</label>
-        <input
-          type="text"
-          name="address"
-          id="canAddress"
-          class="form-control"
-          [ngModel]="canData?.address"
-        />
-      </div>
-      <br />
-      <button
-        type="submit"
-        class="btn btn-outline-primary"
-        [disabled]="refCan.invalid"
-      >
-        Submit</button
-      >&nbsp;
-      <button type="reset" class="btn btn-outline-primary">Reset</button>
-    </form>
-  </div>
+    </div>
+<div class="col-3"></div>
 </div>

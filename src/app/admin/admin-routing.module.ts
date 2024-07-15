@@ -9,7 +9,13 @@ import { CandidateEditComponent } from './candidate/candidate-edit/candidate-edi
 import { TrainAddComponent } from './training/train-add/train-add.component';
 import { TrainDashComponent } from './training/train-dash/train-dash.component';
 import { EmployeeLoginComponent } from '../employee-login/employee-login.component';
-import { EmployeeRegistrationComponent } from '../employee-registration/employee-registration.component';import { TrainEditComponent } from './training/train-edit/train-edit.component';
+import { EmployeeRegistrationComponent } from '../employee-registration/employee-registration.component';
+import { AboutappComponent } from './about/aboutapp/aboutapp.component';
+import { TrainEditComponent } from './training/train-edit/train-edit.component';
+
+
+
+
 
 const routes: Routes = [
   {
@@ -18,13 +24,19 @@ const routes: Routes = [
     children: [
       { path: 'candidate', component: CandidateDashboardComponent },
       { path: 'candidate/add', component: CandidateAddComponent },
-      { path: 'edit', component: CandidateEditComponent },
+      // { path: 'edit', component: CandidateEditComponent },
+  {path:"canedit/:id",component:CandidateEditComponent},
+
       { path: 'training', component: TrainDashComponent },
       { path: 'training/add', component: TrainAddComponent },
+      {path:"trainedit/:id",component:TrainEditComponent},
       // { path: 'training/edit', component: TrainEditComponent },
+  
+      { path: 'about', component: AboutappComponent },
     ],
   },
-  { path: 'edit', component: CandidateEditComponent },
+  // {path:"trainedit/:id",component:TrainEditComponent},
+  // { path: 'edit', component: CandidateEditComponent },
 ];
 
 @NgModule({

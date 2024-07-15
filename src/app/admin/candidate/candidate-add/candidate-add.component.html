@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
   <div class="col-3"></div>
   <div class="col-6">
     <form [formGroup]="canData" (ngSubmit)="addData()">
@@ -45,4 +45,54 @@
       <button type="reset" class="btn btn-outline-primary">Reset</button>
     </form>
   </div>
+</div> -->
+
+
+<p appChangeColor class="text-center"><strong>Add Candidate Details</strong></p>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <form [formGroup]="canData" (ngSubmit)="addData()">
+            <div>
+                <label for="empName" class="form-label">Candidate Name</label>
+    <input type="text" name="empName" id="empName" class="form-control" formControlName="name">
+            </div>
+            <div>
+                <label for="empPost" class="form-label">Candidate Post</label>
+    <input type="text" name="empPost" id="empPost" class="form-control" formControlName="post">
+            </div>
+            <div>
+              <label for="empCoun" class="form-label">Counsellor Name</label>
+  <input type="text" name="empName" id="empCoun" class="form-control" formControlName="counsellor">
+          </div>
+            <div>
+                <label for="empSalary" class="form-label">Candidate Salary</label>
+    <input type="text" name="empSalary" id="empSalary" class="form-control" formControlName="salary">
+            </div>
+            <div>
+                <label for="empName" class="form-label">Candidate Address</label>
+    <input type="text" name="empName" id="empName" class="form-control" formControlName="address">
+            </div><br>
+
+            <button type="submit" class="btn btn-outline-primary btn-sm" >Submit</button>&nbsp;
+            <button type="reset" class="btn btn-outline-primary btn-sm">Reset</button>
+
+        </form>
+
+    </div>
+<div class="col-3"></div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
