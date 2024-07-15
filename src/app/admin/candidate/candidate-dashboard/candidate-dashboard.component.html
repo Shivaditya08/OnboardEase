@@ -1,16 +1,17 @@
 <h1>Candidate Details</h1>
 
-<button type="button" routerLink="add" class="btn btn-outline-success">
+<button type="button" routerLink="add"  class="btn btn-outline-primary add">
   Add
-</button>
+</button> 
 
 <!-- <table borderclass="table table-striped table-hover"> -->
 <table class="table table-striped table-hover">
   <thead class="table-dark">
     <tr>
-      <th>Sr No.</th>
+      <th>ID</th>
       <th>Name</th>
       <th>Post</th>
+      <th>Counsellor</th>
       <th>Salary</th>
       <th>Address</th>
       <th>Action</th>
@@ -21,6 +22,7 @@
       <td>{{ can.id }}</td>
       <td>{{ can.name }}</td>
       <td>{{ can.post }}</td>
+      <td>{{ can.counsellor }}</td>
       <td>{{ can.salary }}</td>
       <td>{{ can.address }}</td>
       <td>
@@ -32,13 +34,14 @@
           <i class="fa fa-eye" aria-hidden="true"></i></button
         >&nbsp; -->
 
-        <button
+        <button type="button" [routerLink]="['/canedit',can.id]" class="btn btn-outline-success btn-sm">Edit</button>&nbsp;
+        <!-- <button
           type="button"
           class="btn btn-outline-success btn-sm"
           [routerLink]="['edit', can.id]"
         >
           Edit</button
-        >&nbsp;
+        >&nbsp; -->
 
         <button
           type="button"

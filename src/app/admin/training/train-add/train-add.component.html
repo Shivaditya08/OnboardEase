@@ -1,1 +1,40 @@
-<p>train-add works!</p>
+<!-- <p>train-add works!</p> -->
+
+<p appChangeColor class="text-center"><strong>Add Training Details</strong></p>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <form [formGroup]="trainData" (ngSubmit)="addData()">
+            <div>
+                <label for="courseName" class="form-label">Course Name</label>
+    <input type="text" name="cName" id="courseName" class="form-control" formControlName="cName">
+            </div>
+            <div>
+                <label for="courseCate" class="form-label">Category</label>
+    <input type="text" name="cCate" id="courseCate" class="form-control" formControlName="cCate">
+            </div>
+            <div>
+              <label for="courseIns" class="form-label">Instructor Name</label>
+  <input type="text" name="cIns" id="courseIns" class="form-control" formControlName="cIns">
+          </div>
+            <div>
+                <label for="courseDur" class="form-label">Duration</label>
+    <input type="text" name="cDur" id="courseDur" class="form-control" formControlName="cDur">
+            </div>
+            <div>
+                <label for="coursePlat" class="form-label">Platform</label>
+    <input type="text" name="cPlat" id="coursePlat" class="form-control" formControlName="cPlat">
+            </div>
+            <div>
+              <label for="courseStat" class="form-label">Status</label>
+  <input type="text" name="cStat" id="courseStat" class="form-control" formControlName="cStat">
+          </div><br>
+
+            <button type="submit" class="btn btn-outline-primary btn-sm" >Submit</button>&nbsp;
+            <button type="reset" class="btn btn-outline-primary btn-sm">Reset</button>
+
+        </form>
+
+    </div>
+<div class="col-3"></div>
+</div>

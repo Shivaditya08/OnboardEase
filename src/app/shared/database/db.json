@@ -1,63 +1,71 @@
 {
   "candidate": [
     {
-      "id": 1,
-      "name": "Tim",
-      "post": "TM",
-      "salary": 132000,
-      "address": "Kolkata"
+      "name": "Joe Root",
+      "post": "Staff-1",
+      "counsellor": "M.S Dhoni",
+      "salary": "40000",
+      "address": "Nottingham",
+      "id": "IN2024101"
     },
     {
-      "id": 2,
-      "name": "Tom",
-      "post": "TL",
-      "salary": 12000,
+      "id": "IN2024102",
+      "name": "Corey Anderson",
+      "post": "Staff-2",
+      "counsellor": "Sachin Tendulker",
+      "salary": 50000,
+      "address": "Auckland"
+    },
+    {
+      "id": "IN2024103",
+      "name": "Jos Buttler",
+      "post": "Senior",
+      "counsellor": "Brendom McCullum",
+      "salary": 85500,
+      "address": "Manchester"
+    },
+    {
+      "id": "IN2024104",
+      "name": "Rinku Singh",
+      "post": "Manager",
+      "counsellor": "Chris Gayle",
+      "salary": 153000,
+      "address": "Patna"
+    },
+    {
+      "id": "IN2024105",
+      "name": "Abhishek Sharma",
+      "post": "Staff-3",
+      "counsellor": "Yuvraj Singh",
+      "salary": 64000,
+      "address": "Hydrabad"
+    },
+    {
+      "id": "IN2024106",
+      "name": "Subhman Gill",
+      "post": "Staff-1",
+      "counsellor": "Virat Kohli",
+      "salary": 45000,
       "address": "Mumbai"
-    },
-    {
-      "id": 3,
-      "name": "Jim",
-      "post": "Hr",
-      "salary": 12500,
-      "address": "Pune"
-    },
-    {
-      "id": 4,
-      "name": "Bob",
-      "post": "CEO",
-      "salary": 13000,
-      "address": "Delhi"
-    },
-    {
-      "id": 5,
-      "name": "Liz",
-      "post": "Cs",
-      "salary": 14000,
-      "address": "Diu"
-    },
-    {
-      "id": 6,
-      "name": "Ava",
-      "post": "Ca",
-      "salary": 15000,
-      "address": "Daman"
     }
   ],
   "training": [
     {
-      "id": 1,
       "cName": "AngularJS",
       "cCate": "Frontend Development",
       "cIns": "Peter Parker",
-      "cDes": "-------",
-      "cStat": "Ongoing"
+      "cDur": "38.5 hr",
+      "cPlat": "Udemy",
+      "cStat": "Ongoing",
+      "id": 1
     },
     {
       "id": 2,
       "cName": "NodeJS",
       "cCate": "Backend Development",
       "cIns": "Robert Downey Jr",
-      "cDes": "-------",
+      "cDur": "35.25 hr",
+      "cPlat": "UpGrad",
       "cStat": "Done"
     },
     {
@@ -65,7 +73,8 @@
       "cName": "HTML 5",
       "cCate": "Web Design",
       "cIns": "Chris Evans",
-      "cDes": "-------",
+      "cDur": "15 hr",
+      "cPlat": "Coursera",
       "cStat": "Ongoing"
     },
     {
@@ -73,7 +82,8 @@
       "cName": "ReactJS",
       "cCate": "Frontend Development",
       "cIns": "John Carter",
-      "cDes": "-------",
+      "cDur": "28 hr",
+      "cPlat": "Udemy",
       "cStat": "Done"
     },
     {
@@ -81,7 +91,8 @@
       "cName": "Bootstrap",
       "cCate": "Frontend Development",
       "cIns": "Bradd Pitt",
-      "cDes": "-------",
+      "cDur": "5 hr",
+      "cPlat": "Great Learning",
       "cStat": "Ongoing"
     },
     {
@@ -89,7 +100,8 @@
       "cName": "Github",
       "cCate": "Version Control",
       "cIns": "Hugh Jackman",
-      "cDes": "-------",
+      "cDur": "12.75 hr",
+      "cPlat": "Coursera",
       "cStat": "Done"
     }
   ],
